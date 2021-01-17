@@ -1,0 +1,160 @@
+# 文字列に値を埋め込む
+name = "taguchi"
+score = 52.8
+
+print("name: %s, score: %f" % (name, score))
+
+# nameを10の幅, scoreを10の幅かつ小数点2桁まで
+# 左揃え
+
+print("name: %-10s, score: %10.2f" % (name, score))
+
+# formatを使った35と同じ表現
+
+print("name: {0}, score: {1}".format(name.score))
+
+# 桁数を指定
+# 右揃え, 左揃え
+
+# 条件分岐
+# score > 80 "Great!"
+# score > 60 "Good!"
+# それ意外 "so so ..."
+
+score = int(input("score ? "))
+
+if score > 80:
+    print("Great!")
+elif score > 60:
+    print("Good!")
+else:
+    print("so so ...")
+
+# 条件演算子
+
+print("Great!" if score > 80 else "so so ...")
+
+# ループ
+# i < 10
+i = 0
+
+while i < 10:
+    print(i)
+    i += 1
+else:
+    print("end")
+
+# 途中でループを抜ける
+
+i = 0
+
+while i < 10:
+    if i == 5:
+        break
+    print(i)
+    i += 1
+else:
+    print("end")
+
+# forによるループ処理
+
+for i in range(10):
+    print(i)
+else:
+    print("end")
+
+
+# forによるループ処理
+# i == 5 をスキップして継続
+
+for i in range(10):
+    if i == 5:
+        continue
+    print(i)
+else:
+    print("end")
+
+# 関数を作成
+# name, age
+# tom (23)
+# bob 21
+# steve 20
+
+# 変数名を使って値を渡す
+# Nick (18)
+
+# 関数の返り値を表示
+# hi
+
+# 関数の中身が何もないもしくは後で書く場合
+
+# ローカル変数とグローバル変数
+
+# スコープの中でグローバル変数を書き換えたい場合
+
+# クラスの作成
+# print(tom.name) = tom
+# print(bob.level) = 5
+
+# コンストラクタ
+# 引数 (self, name)
+# tom
+# bob
+
+# クラス変数
+# 0
+# 2
+
+# メソッド
+# 2 instances
+
+# アクセス制限
+
+# クラスの継承
+# User -> AdminUser
+# bob
+# hi bob
+# hello bob (23)
+
+# override
+
+# クラスの多重継承
+# A, B -> C
+# A!
+# B!
+
+# モジュール
+# user.py を使用
+
+# モジュール
+# package
+
+# 例外処理
+
+# 独自の例外を作成
+
+# リスト型
+    # append
+    # enumerate
+
+# タプル
+
+# - スライス
+
+# 集合型
+
+# セット
+
+# 辞書型
+
+# イテレータ
+
+# ジェネレータ
+
+# map(関数, イテレータ)
+
+# lambda
+
+# filter
+
+# 内包表記
