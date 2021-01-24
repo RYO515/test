@@ -12,4 +12,3 @@ df["人口増減"] = df["平成30年"] - df["平成29年"]
 df = df.sort_values("人口増減", ascending=False)
 df["人口増減"].plot.bar(figsize=(10, 6))
 plt.show()
-
