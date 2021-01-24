@@ -5,6 +5,8 @@ df = pd.read_csv("firehydrant.csv", encoding="shift-jis")
 
 hydrant = df[["緯度", "経度"]].values
 
+# print(hydrant)
+
 m = folium.Map(location=[35.942957, 136.198863], zoom_start=16)
 for data in hydrant:
     folium.Marker([data[0], data[1]]).add_to(m)
